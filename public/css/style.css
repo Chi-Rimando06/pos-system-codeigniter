@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #7a1838;
+
+    background: linear-gradient(135deg, #fff5ef, #fce9df, #fff2e8);
+
+    background-image:
+        linear-gradient(rgba(143, 35, 71, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(143, 35, 71, 0.08) 1px, transparent 1px),
+        linear-gradient(135deg, #fff5ef, #fce9df, #fff2e8);
+
+    background-size: 32px 32px, 32px 32px, 100% 100%;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+
+    background-color: #f4d8cf;
+
+    border-radius: 25px;
+
+    box-shadow: 0 8px 0 #d95b75;
+}
+
+header {
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin: 0 0 20px;
+    color: #8f2347;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+}
+
+nav a {
+    display: inline-block;
+
+    padding: 10px 18px;
+    margin: 0 3px;
+
+    color: #8f2347;
+    background-color: #f6c5bd;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 18px;
+
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: #8f2347;
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    background-color: #8f2347;
+    color: white;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.card {
+    padding: 25px;
+
+    background-color: #fffaf7;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 12px rgba(217, 91, 117, 0.35),
+        0 4px 15px rgba(143, 35, 71, 0.12);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+    background-color: #fffaf7;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #8f2347;
+    color: white;
+
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+
+    border-bottom: 1px solid #efc5bd;
+}
+
+tr:hover {
+    background-color: #fce5df;
+}
+
+footer {
+    text-align: center;
+
+    margin-top: 35px;
+    padding: 15px;
+
+    color: #8f2347;
+
+    font-size: 14px;
+}
