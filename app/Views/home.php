@@ -12,28 +12,32 @@
 
 <body>
 
-    <div class="container">
+    <div class="home-wrapper">
 
-        <h1>Welcome to POS System!</h1>
+        <h1 class="page-title">Welcome to POS System!</h1>
 
         <nav>
-            <a href="<?= site_url('/') ?>">Home</a>
+            <a href="<?= site_url('/') ?>" class="active">Home</a>
             <a href="<?= site_url('about') ?>">About</a>
             <a href="<?= site_url('customers') ?>">Customers</a>
             <a href="<?= site_url('users') ?>">Users</a>
         </nav>
 
-        <div class="card">
-            <h2>Point-of-Sale System</h2>
-            <p>This is the landing page of the POS System.</p>
-            <p>This project demonstrates routing, controllers, views, and static PHP arrays using CodeIgniter 4.</p>
-        </div>
+        <main class="home-content">
+            <img
+                class="home-gif"
+                src="<?= base_url('images/hi.gif') ?>"
+                alt="A cute character waving hello">
 
-        <footer>
-            © 2026 Chi | Chiriemie Keith G. Rimando | TC37
-        </footer>
+            <p>This is the landing page of the POS System.</p>
+            <p>This project demonstrates routing, controllers, views, and PHP arrays using CodeIgniter 4.</p>
+        </main>
 
     </div>
+
+    <footer>
+        © 2026 Chi | Chiriemie Keith G. Rimando | TC37
+    </footer>
 
 </body>
 

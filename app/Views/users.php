@@ -16,13 +16,13 @@
     <div class="container">
 
         <header>
-            <h1>User Accounts</h1>
+            <h1 class="page-title">User Accounts</h1>
 
             <nav>
                 <a href="<?= site_url('/') ?>">Home</a>
                 <a href="<?= site_url('about') ?>">About</a>
                 <a href="<?= site_url('customers') ?>">Customers</a>
-                <a href="<?= site_url('users') ?>">Users</a>
+                <a href="<?= site_url('users') ?>" class="active">Users</a>
             </nav>
         </header>
 
@@ -34,16 +34,14 @@
                 <tr>
                     <th>Username</th>
                     <th>Full Name</th>
-                    <th>Role</th>
                 </tr>
 
                 <?php $users = $users ?? []; ?>
 
                 <?php foreach ($users as $user): ?>
                     <tr>
-                        <td><?= $user['username'] ?? ''; ?></td>
-                        <td><?= $user['fullname'] ?? ''; ?></td>
-                        <td><?= $user['role'] ?? ''; ?></td>
+                        <td><?= $user['username']; ?></td>
+                        <td><?= $user['full_name']; ?></td>
                     </tr>
                 <?php endforeach; ?>
 
@@ -51,11 +49,11 @@
 
         </div>
 
-        <footer>
-            © 2026 Chi | Chiriemie Keith G. Rimando | TC37
-        </footer>
-
     </div>
+
+    <footer>
+        © 2026 Chi | Chiriemie Keith G. Rimando | TC37
+    </footer>
 
 </body>
 

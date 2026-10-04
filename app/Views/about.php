@@ -16,11 +16,11 @@
     <div class="container">
 
         <header>
-            <h1>About POS System</h1>
+            <h1 class="page-title">About POS System</h1>
 
             <nav>
                 <a href="<?= site_url('/') ?>">Home</a>
-                <a href="<?= site_url('about') ?>">About</a>
+                <a href="<?= site_url('about') ?>" class="active">About</a>
                 <a href="<?= site_url('customers') ?>">Customers</a>
                 <a href="<?= site_url('users') ?>">Users</a>
             </nav>
@@ -33,16 +33,16 @@
                 CodeIgniter 4.
             </p>
             <p>
-                It demonstrates the use of routes, controllers, views, and static
-                PHP arrays following the Model-View-Controller (MVC) architecture.
+                It demonstrates the use of routes, controllers, views, and PHP arrays
+                following the Model-View-Controller (MVC) architecture.
             </p>
         </div>
 
-        <footer>
-            © 2026 Chi | Chiriemie Keith G. Rimando | TC37
-        </footer>
-
     </div>
+
+    <footer>
+        © 2026 Chi | Chiriemie Keith G. Rimando | TC37
+    </footer>
 
 </body>
 

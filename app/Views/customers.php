@@ -16,12 +16,12 @@
     <div class="container">
 
         <header>
-            <h1>Customer Accounts</h1>
+            <h1 class="page-title">Customer Accounts</h1>
 
             <nav>
                 <a href="<?= site_url('/') ?>">Home</a>
                 <a href="<?= site_url('about') ?>">About</a>
-                <a href="<?= site_url('customers') ?>">Customers</a>
+                <a href="<?= site_url('customers') ?>" class="active">Customers</a>
                 <a href="<?= site_url('users') ?>">Users</a>
             </nav>
         </header>
@@ -41,9 +41,9 @@
 
                 <?php foreach ($customers as $customer): ?>
                     <tr>
-                        <td><?= $customer['fullname'] ?? ''; ?></td>
-                        <td><?= $customer['email'] ?? ''; ?></td>
-                        <td><?= $customer['phone'] ?? ''; ?></td>
+                        <td><?= $customer['full_name']; ?></td>
+                        <td><?= $customer['email']; ?></td>
+                        <td><?= $customer['phone']; ?></td>
                     </tr>
                 <?php endforeach; ?>
 
@@ -51,11 +51,11 @@
 
         </div>
 
-        <footer>
-            © 2026 Chi | Chiriemie Keith G. Rimando | TC37
-        </footer>
-
     </div>
+
+    <footer>
+        © 2026 Chi | Chiriemie Keith G. Rimando | TC37
+    </footer>
 
 </body>
 
